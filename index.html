@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Task Tracker</h1>
+
+        <form id="itemForm">
+
+            <label for="itemInput">Add a Task</label>
+
+            <input
+                type="text"
+                id="itemInput"
+                placeholder="Enter a task..."
+            >
+
+            <button type="submit">Add Task</button>
+
+        </form>
+
+        <!-- Message for validation -->
+        <p id="message"></p>
+
+        <!-- Summary -->
+        <section>
+            <h2>Summary</h2>
+
+            <p>
+                Total Items:
+                <span id="totalCount">0</span>
+            </p>
+
+            <p>
+                Completed:
+                <span id="completedCount">0</span>
+            </p>
+        </section>
+
+        <!-- Task List -->
+        <section>
+            <h2>Tasks</h2>
+
+            <div id="itemList">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js12.js"></script>
+
+</body>
+</html>
+
